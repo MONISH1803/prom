@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-bg: #FFD6E8;
+  --color-brand-yellow: #FFF066;
+  --color-brand-green-light: #A7F3D0;
+  --color-brand-pink: #F9A8D4;
+  --color-brand-purple-light: #C4B5FD;
+  --color-brand-orange: #FDBA74;
+  --color-brand-blue: #93C5FD;
+  --color-brand-red: #FF8787;
+  --color-brand-purple-dark: #C084FC;
+  --color-brand-green-success: #4ADE80;
+  --color-brand-red-fail: #FB7185;
+  --font-comic: "Comic Sans MS", "Comic Sans", cursive, sans-serif;
+}
+
+body {
+  background-color: var(--color-brand-bg);
+  margin: 0;
+  font-family: var(--font-comic), ui-sans-serif, system-ui;
+  overflow-x: hidden;
+}
+
+.bento-card {
+  background: white;
+  border: 4px solid #000;
+  box-shadow: 8px 8px 0px #000;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding: 1.5rem;
+}
+
+.brutalist-btn {
+  border: 4px solid #000;
+  border-radius: 50px;
+  box-shadow: 4px 4px 0px #000;
+  font-weight: 900;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+}
+
+.brutalist-btn:active {
+  transform: translate(4px, 4px) !important;
+  box-shadow: 0px 0px 0px #000 !important;
+}
+
+.loading-bar {
+  width: 100%;
+  height: 20px;
+  border: 3px solid #000;
+  background: #eee;
+  position: relative;
+}
+
+.loading-fill {
+  height: 100%;
+  background: #4ADE80;
+  border-right: 3px solid #000;
+  transition: width 0.3s ease;
+}
+
+.meme-face {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
